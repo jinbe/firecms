@@ -40,7 +40,8 @@
         "test:lint": "eslint \"src/**\"",
         "test:unit": "cross-env CI=1 react-scripts test --transformIgnorePatterns \"node_modules/(?!react-markdown)/\"",
         "test:watch": "react-scripts test --transformIgnorePatterns \"node_modules/(?!react-markdown)/\"",
-        "prepare": "yarn run prepublishOnly"
+        "prepack": "yarn run prepublishOnly",
+        "prepare": "npm run prepublishOnly"
     },
     "dependencies": {
         "@date-io/date-fns": "^2.11.0",
